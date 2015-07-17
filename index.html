@@ -1,235 +1,274 @@
 <html>
 	<head>
-		<script type="text/javascript" src="http://events.snapifeye.com/snapifeye-widget/snapifeye-widget-all.min.js"></script>
 
+		<!-- Meta
+================================================== -->
+
+<!--Twitter Meta-->
 <meta name="twitter:card" content="photo" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta property="og:URL" content="http://events.snapifeye.com/Display"/>
-<meta property="og:title" content="My photo!"/>
+<meta property="og:title" content="College World Series with Coors Light"/>
 <meta property="og:type" content="article"/>
-<meta property="og:image" content="https://avatars3.githubusercontent.com/u/10963260?v=3&s=280"/>
-<meta property="og:description"        content="I just learned about some cool #EventTech innovation! Check it out at Snapifeye.com" />
-<meta property="article:author"        content="Snapifeye" />
-<meta property="article:publisher"     content="Snapifeye" />
+<meta property="og:image" content="http://i814.photobucket.com/albums/zz62/only_gators2/CWS-header.png">
+<meta property="og:description"        content="We're a the College World Series with Coors Light! Check out my photo on the famcam!" />
+<meta property="article:author"        content="College World Series" />
+<meta property="article:publisher"     content="Coors Light" />
 
-<html>
-	<head>
-		
-		
+
+<!-- Meta / End -->
+
 <!-- Place this tag in your head or just before your close body tag. -->
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-		<script language="javascript">
+<script language="javascript">
         function emailCurrentPage(){
             window.location.href="mailto:?subject="+document.title+"&body="+escape(window.location.href);
         }
     </script>
+
+		<!-- Need this -->
+		<script type="text/javascript" src="http://events.snapifeye.com/snapifeye-widget/snapifeye-widget-all.min.js"></script>
+
 		<style>
-			html,
-			body {
-				margin: 0px;
-				padding: 0px;
-				background-image:url("");
+		html, body { margin: 0px; padding: 0px;background:transparent;!important }
 
-				background-repeat: no-repeat;
-				background-position: top;
-				background-color:#0c1355;
-				background-size:1920px 1080px;
+			.sn-widget-gallery--info--event-name{
+				position: absolute;
+  			color: #FFFFFF;
+			  width: 100%;
+			  top: 10px !important;
+			  height: 20px !important;
+			  margin-top: 10px !important;
+			  font-size: 30px !important;
+			  line-height: 32px !important;
+			  text-align: center;
+}
+
+			.sn-widget-gallery--image{
+				position: relative;
+  				Height:auto;
+				width:100%;
+				max-width: 500px!important;
+			  	max-height: 500px!important;
+			  	background:transparent;
+
+}
+
+			.sn-widget-gallery--info-container {
+				display: none !important;
+				position: fixed !important;
+				top: 0px !important;
+				left:0px !important;
+				font-family: Helvetica;
 			}
+
+			.sn-widget-gallery--image-container{
+				position: relative !important;
+  				top: 0px !important;
+  				bottom: 0px !important;
+  				right: 0px !important;
+  				left: 0% !important;
+				padding:25px;
+				background:transparent;
+
+
+			}
+
 				.sn-widget-wrapper{
-					background:transparent !important;
-				}
-				.sn-widget-gallery--image-container {
-					position: absolute;
-					top: 50px !important;
-					bottom: 0px;
-					right: 0px;
-					left: 50%;
-				}
-				}
-				.sn-widget-gallery--info-container {
-					display: inline-block !important;
-					position: relative !important;
-					width: 50% !important;
-				}
-				.dummy {
-					margin-top: 100%;
-				}
-				.smarty {
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-				}
-				.data-wrapper {
-					position: absolute;
-					width: 95%;
-					height: 0px;
-					top: 50%;
-					margin-top: -150px;
-				}
-				.data-wrapper div {
-					width: 95%;
-					padding: 0px 75px;
-				}
-				.photo-meta-first-name,
-				.photo-meta-last-name {
-					display:none;
-					font-style: italic;
-					font-family: Helvetica;
-					text-transform: uppercase;
-					letter-spacing: 1px;
-					color: #FFFFFF;
-					font-weight: 600;
-					font-size: 53px;
-					line-height: 55px;
-				}
-				.h1 {
-					font-style: italic;
-					font-family: Helvetica;
-					text-transform: uppercase;
-					letter-spacing: 1px;
-					color: #FFFFFF;
-					font-weight: 600;
-					font-size: 53px;
-					line-height: 55px;
-				}
-				.photo-meta-last-name {
-					margin-bottom: 25px;
-				}
-				.photo-question {
-					font-style: italic;
-					font-family: Helvetica;
-					color: #FFFFFF;
-					font-weight: 100;
-					font-size: 36px;
-					line-height: 43px;
-				}
-				.event-hash-tag {
-					position: absolute;
-					bottom: 200px;
-					right: 50px;
-					color: #FFFFFF;
-					font-size: 36px;
-					line-height: 43px;
-					font-family: Helvetica;
-				}
-				.shower{
-					padding:50px 10px 0px 10px;
+				 background:transparent !important;
+				 height:auto !important;
 
+			}
+
+			.dummy {
+				margin-top: 100%;
+			}
+
+			.smarty {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+
+			.data-wrapper {
+				position: absolute;
+				width: 100%;
+				height: auto;
+
+			}
+
+
+			.photo-meta-first-name,
+			.photo-meta-last-name {
+				font-style: italic;
+				font-family: Helvetica;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				padding: 100px 25px;
+
+				color: #FFFFFF;
+				font-weight: 600;
+				font-size: 33px;
+				line-height: 35px;
+
+			}
+			.photo-question {
+				font-style: italic;
+				font-family: Helvetica;
+
+				color: #FFFFFF;
+				font-weight: 100;
+				font-size: 16px;
+				line-height: 18px;
+			}
+
+			.event-hash-tag {
+				position: absolute;
+				bottom: 200px;
+				right: 50px;
+
+				color: #FFFFFF;
+				font-size: 36px;
+				line-height: 43px;
+				font-family: Helvetica;
+			}
+
+			.sidebar {
+			   position: relative;
+				 padding:25px;
+				 aligh:center;
+	}
+
+				.tickets {
+					width: 45px;
+					height: 250px;
+					position: fixed;
+					left: 20%;
+					top: 60%;
 				}
 
-				@media (max-width: 991px){
-					.hidder{
-	        				display:none;
-				}
-					.sn-widget-gallery--image-container{
-						display:block !important;
-						position:inline;
-						width:50%;
-						padding:0px 0px 0px 0px;
-						left:0% !important;
-						right:0% !important;
-						margin:auto !important;
-					}
-					.sn-widget-gallery--image{
-						display:block !important;
-						position:inline;
-						padding:10px 0px 0px 0px;
-						left:0% !important;
-						right:0% !important;
-						margin:auto !important;
-					}
-					}
+			a.MyButton {
+				display:block;
+				box-shadow: 6px 6px 8px #2d2d2d;
+				font-size: 32px;
+				color: black;
+				text-align:center;
+				line-height:71px;
+				width:auto;
+				max-width:500px;
+				height:71px;
+				border-radius:3px;
+				align:center;
+				background:transparent;
+				font-family: Helvetica;
+			}
 
-			@media (min-width: 991px){
-				.shower{
-					display:none;
-				}
-		</style>
+
+</style>
+
 		<script type="text/javascript">
-			function resolveFirstName(photo) {
+
+			function resolveFirstName(data) {
+				console.log("data", data);
+
+				var photo = data.photo
 				var fullName = (photo.meta || {}).name;
 				if (fullName) {
-					fullName = fullName.split(" ")[0];
+					fullName = fullName.split(" ")[1];
 				}
 				return fullName;
 			}
-			function resolveLastName(photo) {
-				var fullName = (photo.meta || {}).name;
-				if (fullName) {
-					fullName = fullName.split(" ").pop();
-				}
-				return fullName;
+
+			function resolveEventName(data) {
+				return data.event.name;
 			}
-			function resolveQuestion1(data) {
-				var questions = (data.event.offer_questions || []);
-				for (var i = 0; i < questions.length; i++) {
-					var question = questions[i];
-					if (question.indexOf("name of") > -1) {
-						return (data.photo.meta || {})[question]
-					}
-				}
-				return null;
+
+			function resolveQuestion(data) {
+				console.log("data", data);
+
+
+				return data.photo.caption;
 			}
-			function resolveQuestion2(data) {
-				var questions = (data.event.offer_questions || []);
-				for (var i = 0; i < questions.length; i++) {
-					var question = questions[i];
-					if (question.indexOf("located") > -1) {
-						return (data.photo.meta || {})[question]
-					}
-				}
-				return null;
-			}
+
 		</script>
+
 	</head>
-<div class = "shower"><center>
-	<!-- Facebook -->
+	<body style="background:transparent">
+		<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+FB.init({appId: '616833721713503', status: true, cookie: true,
+xfbml: true});
+};
+(function() {
+var e = document.createElement('script'); e.async = true;
+e.src = document.location.protocol +
+'//connect.facebook.net/en_US/all.js';
+document.getElementById('fb-root').appendChild(e);
+}());
+</script>
+
+
+		<div class="sidebar"> <div class="col-md-6"><center>
+
+			<h2 style="color:#000; font-family: Helvetica; padding:0px;">Share your Photo!<h2>
+
+
+		<!-- Facebook -->
+
 		<script language="javascript">
     function fbshareCurrentPage()
     {window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
 </script>
+
 <a href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook"><img src = "http://4.bp.blogspot.com/-ne-G24v59mc/Ucl53ygXkXI/AAAAAAAACXg/jzVl8dP56YM/s1600/facebook-share-buttons.png" style="height:30px;width:auto;"></a></a>
+
+
+
 		<!-- Twitter -->
-		 <a href="https://twitter.com/share" class="twitter-share-button" data-text="#EventTech Innovation!" data-via="@Snapifeye" data-size="large" data-count="none" data-hashtags="EventProfs" data-dnt="true">Tweet</a>
+		 <a href="https://twitter.com/share" class="twitter-share-button" data-text="We're at the College World Series with @CoorsLight! #CWS2015" data-via="" data-size="large" data-count="none" data-hashtags="" data-dnt="true">Tweet</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 		<!-- Pintrist -->
 	<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-height="28"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" /></a>
 <!-- Please call pinit.js only once per page -->
 <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+
 		<!-- Linkedin -->
 <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
 <script type="IN/Share"></script>
-	
+
 		<!-- Google Plus -->
 <!-- Place this tag where you want the share button to render. -->
 <div class="g-plus" data-action="share" data-annotation="none" data-height="24"></div>
-	
+
 		<!-- Email -->
 		
         <a href="javascript:emailCurrentPage()"><img src="http://imgsrv.959theranch.com/image/kfwr2/UserFiles/Image/button_email.png" style="height:30px;width:auto;" alt="Email" /></a>
-</div></center>
+		
+
+	</div></div class="col-md-6">
 
 
-	<body style="background:#transparent; !important">
-		<snapifeye-widget class="full-screen" params="eventId: 280, period: 4500, custom: true">
-			<!-- This content inside of there is optional. This will customize the left side text -->
-			<!-- Event object: $data.event -->
-			<!-- Photo object: $data.photo -->
-			<div class="dummy"></div>
-			<div class="smarty">
-			<div class="hidder" style="color:white; padding 900px 25px 0px 25px;width:60%;height:auto;"><center><p style="color:black;"sponsored by:   </p><img src = "" style="width:50%:height:auto;"></center></div>
-				<div class="data-wrapper">
-					<div class="photo-meta-first-name" data-bind="text: resolveFirstName($data.photo)"></div>
-					<div class="photo-meta-last-name" data-bind="text: resolveLastName($data.photo)"></div>
-					<div class="photo-question" data-bind="text: resolveQuestion1($data)"></div>
-					<div class="photo-question" data-bind="text: resolveQuestion2($data)"></div>
-				</div>
-			</div>
-                <div class="event-hash-tag"></div>
+
+		<center><snapifeye-widget class="50%" params="eventId: 323, period: 4000, custom: false">
 		</snapifeye-widget>
+<div class="col-md-6"></div class="col-md-6">
+
+		<script type="text/javascript">
+	(function(d){
+	    var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
+	    p.type = 'text/javascript';
+	    p.async = true;
+	    p.src = '//assets.pinterest.com/js/pinit.js';
+	    f.parentNode.insertBefore(p, f);
+	}(document));
+	</script>
+		
 	</body>
 </html>
